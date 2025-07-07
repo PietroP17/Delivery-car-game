@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Delivery point
+  - Delivery hub
+  - Parked car
+  - Tree
+  - House
+  - Lake
+  - Rock
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Streets
+    uniqueID: 4039597011
+    locked: 0
+  - name: On the ground
+    uniqueID: 500455397
+    locked: 0
+  - name: Cars
+    uniqueID: 3473064659
+    locked: 0
+  - name: Houses
+    uniqueID: 1802173195
+    locked: 0
+  - name: Trees
+    uniqueID: 2560078101
+    locked: 0
