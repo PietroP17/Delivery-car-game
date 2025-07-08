@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 59a22d5490cf05a4ca89fe01cc5eb6b1
   - enabled: 1
-    path: Assets/Scenes/In game.unity
+    path: Assets/Scenes/Instructions.unity
+    guid: 375e4ff3597e56e43a7f27e3d1f1aea8
+  - enabled: 1
+    path: Assets/Scenes/Leaderboard.unity
+    guid: fda7ee69d136e9746a638ea01a7c5097
+  - enabled: 1
+    path: Assets/Scenes/WriteName.unity
+    guid: 1d92f6d2db314284897fd28ce0d7b24d
+  - enabled: 1
+    path: Assets/Scenes/InGame.unity
     guid: 77006e275f71f9e489c2485d8cb0616e
   m_configObjects: {}

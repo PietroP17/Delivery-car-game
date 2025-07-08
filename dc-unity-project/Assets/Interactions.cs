@@ -14,7 +14,11 @@ public class Interactions : MonoBehaviour
 
     [SerializeField] GameObject overlayBackground;
     [SerializeField] GameObject victoryText;
+    [SerializeField] GameObject scoreTitle;
+    [SerializeField] GameObject scores;
     float timer;
+
+    [SerializeField] TextMeshProUGUI leaderboardText;
 
     void Start()
     {
@@ -72,10 +76,30 @@ public class Interactions : MonoBehaviour
             int seconds = Mathf.FloorToInt(timer % 60f);
             string timeFormatted = string.Format("{0:00}:{1:00}", minutes, seconds);
 
-            victoryText.GetComponent<TextMeshProUGUI>().text = $"All deliveries done!\nTime taken: {timeFormatted}\nPress Esc";
+            victoryText.GetComponent<TextMeshProUGUI>().text = $"All deliveries done!\nTime: {timeFormatted}\nPress Esc";
+
+            NameAndTimeLogic.Instance.completionTime = timer;
+            NameAndTimeLogic.Instance.SaveScore();
+
+            ScoreList leaderboardContainer = NameAndTimeLogic.Instance.leaderboard;
+            string leaderboardDisplay = "";
+
+            for (int i = 0; i < Mathf.Min(5, leaderboardContainer.leaderboard.Count); i++)
+            {
+                string name = leaderboardContainer.leaderboard[i].name;
+                float time = leaderboardContainer.leaderboard[i].time;
+                int min = Mathf.FloorToInt(time / 60f);
+                int sec = Mathf.FloorToInt(time % 60f);
+                string formatted = string.Format("{0:00}:{1:00}", min, sec);
+                leaderboardDisplay += $"{i + 1}. {name} - {formatted}\n\n";
+            }
+
+            leaderboardText.text = leaderboardDisplay;
 
             overlayBackground.SetActive(true);
             victoryText.SetActive(true);
+            scoreTitle.SetActive(true);
+            scores.SetActive(true);
         }
     } 
 }
