@@ -29,8 +29,8 @@
 
 ## 💾 Score Saving
 - Scores are saved in a file called leaderboard.json located in the persistent data path of the system:
-**Windows:** C:\Users\YourName\AppData\LocalLow\Pietro Petti\Delivery car\leaderboard.json
-**Mac:** ~/Library/Application Support/Pietro Petti/Delivery car/leaderboard.json
+- **Windows:** C:\Users\YourName\AppData\LocalLow\Pietro Petti\Delivery car\leaderboard.json
+- **Mac:** ~/Library/Application Support/Pietro Petti/Delivery car/leaderboard.json
 
 ## 📋 To Do
 - Add sound effects
