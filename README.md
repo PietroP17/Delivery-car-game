@@ -19,21 +19,6 @@
 - **UI:** TextMeshPro (TMP)
 - **Data Persistence:** `JsonUtility` with `Application.persistentDataPath`
 
-## 📁 Project Structure
-Assets/
-├── Scripts/
-│ ├── Interactions.cs
-│ ├── NameAndTimeLogic.cs
-│ ├── LeaderboardFromMenu.cs
-│ └── [Other scripts...]
-├── Scenes/
-│ ├── MainMenu.unity
-│ ├── InGame.unity
-│ ├── WriteName.unity
-│ ├── Instructions.unity
-│ └── Leaderboard.unity
-└── Prefabs/, Sprites/, Fonts/, UI/ ...
-
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
