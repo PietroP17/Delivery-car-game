@@ -33,9 +33,10 @@
 - **Mac:** ~/Library/Application Support/Pietro Petti/Delivery car/leaderboard.json
 
 ## 📋 To Do
+- Clean the code
 - Add sound effects
 - Create multiple levels
-- Polish and improve UI and UX
+- Clean and improve UI and UX
 - Other ...
 
 ## 🧾 License
